@@ -26,7 +26,7 @@ export class MyFormComponent implements OnInit {
         this.myStore.scope$.pipe(take(1)).subscribe(scope => {
             let { name, age, info } = scope;
             this.editForm.patchValue({ name, age, message: info.message });
-            console.log('scope', info);
+            // console.log('scope', info);
         });
     }
 
