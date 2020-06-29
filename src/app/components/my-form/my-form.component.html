@@ -1,0 +1,15 @@
+<form [formGroup]='editForm'>
+    <div>
+        <label>姓名</label>
+        <input type="text" formControlName='name'>
+    </div>
+    <div>
+        <label>年纪</label>
+        <input type="number" formControlName='age'>
+    </div>
+    <div>
+        <label>消息</label>
+        <input type="text" formControlName='message'>
+    </div>
+</form>
+<button (click)='save()'>保存</button>
